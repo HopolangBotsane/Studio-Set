@@ -4,7 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Homepage from "./Pages/Homepage.jsx";
 import Aboutpage from "./Pages/Aboutpage.jsx"
-import Dashboardpage from './Pages/Dashboardpage.jsx';
+import VendorDashboard from './Pages/VendorDashboard.jsx';
+import RenterDashboard from './Pages/RenterDashboard.jsx';
+import HelpCenter from './Pages/HelpCenter.jsx';
 import NotFoundPage from './Pages/NotFoundPage.jsx';
 
 import './index.css';
@@ -17,13 +19,20 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <Aboutpage/>
-  },
-  {
-    path: "/dashboard",
-    element: <Dashboardpage/>,
+    element: <Aboutpage/>,
     errorElement: <NotFoundPage/>
   },
+  {
+    path: "/renterdashboard",
+    element: <RenterDashboard/>,
+    errorElement: <NotFoundPage/>
+  },
+  {
+    path: "/vendordashboard",
+    element: <VendorDashboard/>,
+    errorElement: <NotFoundPage/>
+  },
+  
 ])
 
 createRoot(document.getElementById('root')).render(
