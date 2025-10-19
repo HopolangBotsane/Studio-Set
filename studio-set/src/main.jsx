@@ -23,6 +23,11 @@ const router = createBrowserRouter([
     errorElement: <NotFoundPage/>
   },
   {
+    path: "/help",
+    element: <HelpCenter/>,
+    errorElement: <NotFoundPage/>
+  },
+  {
     path: "/renterdashboard",
     element: <RenterDashboard/>,
     errorElement: <NotFoundPage/>
