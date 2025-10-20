@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "@types/react-router": "^5.1.20"
+    "@types/react-router": "^5.1.20",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
